@@ -1,0 +1,38 @@
+[
+  {
+    "marca": "Dell",
+    "modelo": "XPS 13",
+    "precio": 1200,
+    "uso_ideal": ["oficina", "estudio"],
+    "ram": "16GB",
+    "procesador": "Intel i7",
+    "gpu": "Intel Iris Xe",
+    "pantalla": "13.3",
+    "peso": "1.2kg",
+    "sistema_operativo": "Windows"
+  },
+  {
+    "marca": "Apple",
+    "modelo": "MacBook Pro 14",
+    "precio": 1999,
+    "uso_ideal": ["edición de video", "diseño gráfico"],
+    "ram": "16GB",
+    "procesador": "M2 Pro",
+    "gpu": "Integrada",
+    "pantalla": "14",
+    "peso": "1.5kg",
+    "sistema_operativo": "macOS"
+  },
+  {
+    "marca": "Asus",
+    "modelo": "TUF Gaming F15",
+    "precio": 950,
+    "uso_ideal": ["juegos", "edición de video"],
+    "ram": "16GB",
+    "procesador": "Intel i7",
+    "gpu": "NVIDIA GTX 1650",
+    "pantalla": "15.6",
+    "peso": "2.3kg",
+    "sistema_operativo": "Windows"
+  }
+]
