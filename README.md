@@ -22,5 +22,5 @@ PASOS PARA INICIAR EL PROYECTO
    Si no tienes requirements.txt, puedes instalar manualmente:
    pip install streamlit experta matplotlib pandas
 
-3. ▶️ Ejecuta la aplicación:
+3.  Ejecuta la aplicación:
    streamlit run chatbot_app_chat.py
