@@ -23,4 +23,4 @@ PASOS PARA INICIAR EL PROYECTO
    pip install streamlit experta matplotlib pandas
 
 3.  Ejecuta la aplicación:
-   streamlit run chatbot_app_chat.py
+   streamlit run chatbot_laptop.py
