@@ -1,2 +1,5 @@
-flask
+streamlit
+pandas
+matplotlib
 experta
+frozendict>=2.3
