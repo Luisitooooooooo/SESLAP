@@ -33,16 +33,16 @@ if st.button("Reiniciar"):
 
 preguntas = [
     ("uso", "¿Para qué usarás la laptop? (ej: oficina, videojuegos, edición de video...)"),
-    ("presupuesto", "¿Cuál es tu presupuesto máximo en USD?"),
-    ("marca", "¿Marca preferida? (ej: HP, Asus, Lenovo)"),
+    ("presupuesto", "¿Cuál es tu presupuesto máximo en MXN?"),
+    ("marca", "¿Marca preferida? (ej: HP, Asus, Lenovo, Infinix, Acer, Lg, msi, honor, gigabyte, dell)"),
     ("pantalla", "¿Tamaño mínimo de pantalla en pulgadas? (ej: 15.6)"),
     ("sistema_operativo", "¿Sistema operativo? (Windows, macOS, Linux)"),
-    ("peso_maximo", "¿Peso máximo del equipo (kg)? (ej: 2.0)"),
+    ("peso_maximo", "¿Peso máximo del equipo (kg)? (ej: 5.0)"),
     ("ram_min", "¿RAM mínima? (ej: 8 GB, 16 GB)"),
-    ("gpu_req", "¿GPU/Tarjeta gráfica deseada? (opcional)"),
-    ("resolucion", "¿Resolución deseada? (opcional, ej: 1920x1080)"),
-    ("almacenamiento_primario", "¿Almacenamiento primario? (ej: 512 SSD)"),
-    ("almacenamiento_secundario", "¿Almacenamiento secundario? (ej: 1 TB HDD o 0)"),
+    ("gpu_req", "¿GPU/Tarjeta gráfica deseada? (opcional: En caso de no querer agregar una respuesta responder con '0')"),
+    ("resolucion", "¿Resolución deseada? ej: 1920x1080 (opcional: En caso de no querer agregar una respuesta responder con '0')"),
+    ("almacenamiento_primario", "¿Almacenamiento primario? ej: 512 SSD"),
+    ("almacenamiento_secundario", "¿Almacenamiento secundario? ej: 1 TB HDD o 0 (opcional: En caso de no querer agregar una respuesta responder con '0')"),
 ]
 
 opciones_validas = {
