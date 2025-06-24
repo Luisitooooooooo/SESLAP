@@ -108,12 +108,28 @@ if st.session_state.step < len(preguntas):
                     f"⚠️ Opción no válida. Opciones válidas: {', '.join(opciones_validas[clave])}"
                 )
         else:
-            # Si no requiere validación, se acepta cualquier entrada
-            st.session_state.chat.append({"role": "assistant", "content": pregunta})
-            st.session_state.chat.append({"role": "user", "content": user_input})
-            st.session_state.respuestas[clave] = entrada
-            st.session_state.step += 1
-            st.rerun()
+        # Validación especial para presupuesto (debe ser entero)
+            if clave == "presupuesto":
+                try:
+                    valor_entero = int(entrada)
+                    if valor_entero <= 0:
+                        raise ValueError
+                    st.session_state.chat.append({"role": "assistant", "content": pregunta})
+                    st.session_state.chat.append({"role": "user", "content": str(valor_entero)})
+                    st.session_state.respuestas[clave] = str(valor_entero)
+                    st.session_state.step += 1
+                    st.rerun()
+                except ValueError:
+                    st.chat_message("assistant").markdown(
+                        "⚠️ El presupuesto debe ser un número entero positivo. Intenta nuevamente."
+                    )
+            else:
+                # Si no requiere validación especial, se acepta cualquier entrada
+                st.session_state.chat.append({"role": "assistant", "content": pregunta})
+                st.session_state.chat.append({"role": "user", "content": user_input})
+                st.session_state.respuestas[clave] = entrada
+                st.session_state.step += 1
+                st.rerun()
 
 # --- Procesamiento de respuestas y recomendación ---
 elif st.session_state.step == len(preguntas) and not st.session_state.resultados_mostrados:
